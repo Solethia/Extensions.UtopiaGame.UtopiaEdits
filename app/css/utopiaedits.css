@@ -1,0 +1,87 @@
+#spellslist {
+	width: 100%;
+	table-layout: fixed ;
+}
+
+
+#spellslist > tbody > tr > td {
+	font-size: 18px;
+	font-family: KnightsQuestRegular;
+	font-weight: normal;
+	width: 33.33333333333333333333% ;
+}
+
+#spellslist > tbody > tr > td > .castspell
+{
+	Padding: 3px;
+	
+	border: 1px solid #7c551a;
+	box-shadow: 1px -1px 1px 0px #d4caa8, -1px 1px 2px #3d2f1a, inset 0px 0px 10px #000;
+	background: -webkit-radial-gradient(center, ellipse cover, #E5C40F 0%,#7c551a 100%);
+	border-radius: 4px;
+	
+    font-family: KnightsQuestRegular;
+    font-size: 14px;
+    font-weight: normal;
+    
+    display: block;
+}
+
+#spellslist > tbody > tr > td > .castspell:hover
+{
+	background: -webkit-radial-gradient(center, ellipse cover, #ead464 0%,#775f3a 100%);
+}
+
+#spellslist > tbody > tr > td > .spell-description
+{
+	margin-top: 5px;
+	Padding: 3px;
+	
+	border: 1px solid #7c551a;
+	background: -webkit-radial-gradient(center, ellipse cover, #7c551a 0%,#291c09 100%);
+	box-shadow: 1px -1px 1px 0px #d4caa8, -1px 1px 2px #3d2f1a, inset 0px 0px 10px #000;
+	
+	font-family: KnightsQuestRegular;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#spellslist > tbody > tr > td > .spell-description > .title
+{
+	color: gray;
+}
+
+#spellslist > tbody > tr > td > .spell-description > .negative-effect
+{
+	color: red;
+}
+
+#spellslist > tbody > tr > td > .spell-description > .positive-effect
+{
+	color: rgb(144, 238, 144);
+}
+
+.xpa {
+	color: rgb(255, 165, 0);
+    font-size: x-small;
+}
+
+.sci-milestone {
+	font-size: x-small;
+}
+
+.sci-milestone-1 {
+	color: #a5d387;
+}
+
+.sci-milestone-2 {
+	color: #e5c40f;
+}
+
+.sci-milestone-3 {
+	color: rgb(98, 48, 58);
+}
+
+.utopiaedits-hide {
+	display:none;
+}

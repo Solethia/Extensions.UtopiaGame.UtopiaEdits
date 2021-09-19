@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css" />
+    <script src="../dependencies/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../dependencies/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body id="popup-body">
+    <div id="popup-header" class="p-3 bg-dark text-white">
+        <span>Utopia Edits</span>
+    </div>
+    <div id="popup-content">
+        <div class="accordion" id="settingsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Mystics
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#settingsAccordion">
+                    <div class="accordion-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="check-add-self-spell-description">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Add self spell descriptions</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="check-hide-self-spell-dropdown-cast">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Hide self spell dropdown & cast</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="check-hide-active-self-spells-list">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Hide active self spells list</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Science
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#settingsAccordion">
+                    <div class="accordion-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="check-add-science-milestones">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Add science milestones</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Train army
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#settingsAccordion">
+                    <div class="accordion-body">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="check-add-train-army-future-column">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Add future column</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-footer" class="p-1 bg-dark">
+        <!-- Button trigger modal -->
+        <div class="clearfix">
+            <button type="button" class="btn btn-outline-light btn-xs float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Attribution
+            </button>
+        </div>
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="exampleModalLabel">Attribution</h5>
+                        <button type="button" class="btn-close btn-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <small class="mb-0">Frankenstein Creature</small>
+                        <Small class="blockquote-footer"><cite title="https://lorcblog.blogspot.com">Lorc</cite> <a class="btn btn-outline-info btn-xs" href="http://creativecommons.org/licenses/by/3.0/" rel="license">CC BY 3.0</a></Small>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary btn-xs" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div>
+
+        </div>-->
+    </div>
+    <!--<button id="active-toggle"></button>-->
+
+
+</body>
+</html>

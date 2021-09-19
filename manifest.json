@@ -1,0 +1,45 @@
+{
+  "name": "Utopia - Sole's UI Edits",
+  "description": "UI Edits to Utopia@utopia-game.com.",
+  "version": "0.1.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [ "https://utopia-game.com/*/game/*" ],
+      "js": [
+        "/dependencies/jquery/jquery-3.6.0.min.js",
+        "/app/helpers/mutationObserverHelper.js",
+        "/app/helpers/helpers.js",
+
+        "/app/core/configurationProvider.js",
+        "/app/core/utopiaPageTracking.js",
+        "/app/core/utopiaResourceBar.js",
+
+        "/app/pages/utopiaEnchantmentPageHandler.js",
+        "/app/pages/utopiaSciencePageHandler.js",
+        "/app/pages/utopiaTrainArmyPageHandler.js",
+
+        "/app/utopiaEditsApplication.js",
+        "/app/utopiaEditsProgram.js"
+      ],
+      "css": [ "app/css/utopiaedits.css" ]
+    }
+  ],
+  "permissions": [ "storage" ],
+  "host_permissions": [ "https://utopia-game.com/*/game/*" ],
+  "action": {
+    "default_popup": "popups/popup.html",
+    "default_icon": {
+      "16": "/images/icon-16.png",
+      "32": "/images/icon-32.png",
+      "48": "/images/icon-48.png",
+      "128": "/images/icon-128.png"
+    }
+  },
+  "icons": {
+    "32": "/images/icon-32.png",
+    "48": "/images/icon-48.png",
+    "128": "/images/icon-128.png"
+  }
+}
