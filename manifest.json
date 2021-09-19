@@ -1,7 +1,7 @@
 {
   "name": "Utopia - Sole's UI Edits",
   "description": "UI Edits to Utopia@utopia-game.com.",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "manifest_version": 3,
   "content_scripts": [
     {
